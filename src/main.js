@@ -6,6 +6,9 @@ const go = new Go();
 WebAssembly.instantiateStreaming(fetch("/main.wasm"), go.importObject).then(
   (result) => {
     go.run(result.instance);
+    const loading = document.getElementById("loading");
+    loading.classList.remove("flex");
+    loading.classList.add("hidden");
   }
 );
 
