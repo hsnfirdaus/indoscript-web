@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndoScript</title>
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+  </head>
+  <body class="bg-rose-100">
+    <header class="text-center pt-10">
+      <h1 class="text-3xl font-bold text-slate-800">IndoScript</h1>
+      <h2 class="text-slate-600 mt-2 mb-5">
+        Bahasa Pemrograman Interpreted dengan sintaks Bahasa Indonesia. Dibuat
+        dengan GO.
+      </h2>
+      <a
+        href="//github.com/hsnfirdaus/indoscript"
+        class="inline-flex items-center bg-rose-500 font-bold h-10 text-white uppercase px-4 rounded-xl shadow-xl shadow-rose-300 hover:bg-rose-600"
+        >Lihat GitHub</a
+      >
+    </header>
+    <div
+      class="flex flex-col lg:flex-row h-screen gap-4 px-2 py-10 lg:px-20 lg:my-20 items-center"
+    >
+      <!-- prettier-ignore -->
+      <div
+        class="flex-1 w-full rounded-xl overflow-hidden block h-screen shadow-xl"
+      ><div id="kode" class="h-full w-full"></div></div>
+      <div class="text-center my-6">
+        <button
+          id="jalankan"
+          class="bg-rose-500 font-bold h-10 text-white uppercase px-4 rounded-xl shadow-xl shadow-rose-300 hover:bg-rose-600"
+        >
+          Jalankan
+        </button>
+      </div>
+      <div
+        id="result-container"
+        class="flex-1 w-full bg-gray-950 text-white p-2 rounded-xl h-screen shadow-xl"
+      >
+        <pre id="hasil" class="max-w-full overflow-auto font-mono"></pre>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
